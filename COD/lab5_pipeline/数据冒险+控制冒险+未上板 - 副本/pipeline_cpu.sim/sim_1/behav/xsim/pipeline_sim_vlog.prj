@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/sim/single_data_mem.v" \
+"../../../../../../计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/sim/single_text_mem.v" \
+"../../../../../../计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v" \
+"../../../../../../计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v" \
+"../../../../../../计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v" \
+"../../../../../../计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v" \
+"../../../../../../计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v" \
+"../../../../pipeline_cpu.srcs/sources_1/new/ex_mem.v" \
+"../../../../pipeline_cpu.srcs/sources_1/new/forward.v" \
+"../../../../pipeline_cpu.srcs/sources_1/new/hazard.v" \
+"../../../../pipeline_cpu.srcs/sources_1/new/id_ex.v" \
+"../../../../pipeline_cpu.srcs/sources_1/new/if_id.v" \
+"../../../../pipeline_cpu.srcs/sources_1/new/mem_wb.v" \
+"../../../../../../计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v" \
+"../../../../../../计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v" \
+"../../../../../../计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v" \
+"../../../../pipeline_cpu.srcs/sim_1/new/pipeline_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

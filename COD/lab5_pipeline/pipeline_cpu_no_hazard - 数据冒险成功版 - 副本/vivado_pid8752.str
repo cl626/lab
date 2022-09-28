@@ -1,0 +1,185 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 8752
+License: Customer
+
+Current time: 	Tue May 10 16:29:12 CST 2022
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 51 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/software/vivado/vivado2019.1/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	D:/software/vivado/vivado2019.1/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	联想
+User home directory: C:/Users/联想
+User working directory: E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/software/vivado/vivado2019.1/Vivado
+HDI_APPROOT: D:/software/vivado/vivado2019.1/Vivado/2019.1
+RDI_DATADIR: D:/software/vivado/vivado2019.1/Vivado/2019.1/data
+RDI_BINDIR: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/联想/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/联想/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/联想/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	D:/software/vivado/vivado2019.1/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版/vivado.log
+Vivado journal file location: 	E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版/vivado.jou
+Engine tmp dir: 	E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版/.Xil/Vivado-8752-life
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/software/vivado/vivado2019.1/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: D:/software/vivado/vivado2019.1/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: D:/software/vivado/vivado2019.1/Vivado/2019.1
+XILINX_VIVADO: D:/software/vivado/vivado2019.1/Vivado/2019.1
+XILINX_VIVADO_HLS: D:/software/vivado/vivado2019.1/Vivado/2019.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 589 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: E:\lab5_pipeline\pipeline_cpu_no_hazard - 数据冒险成功版\pipeline_cpu.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project {E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版/pipeline_cpu.xpr} 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 98 MB (+100770kb) [00:00:20]
+// [Engine Memory]: 633 MB (+512317kb) [00:00:20]
+// [GUI Memory]: 104 MB (+623kb) [00:00:24]
+// WARNING: HEventQueue.dispatchEvent() is taking  6488 ms.
+// Tcl Message: open_project {E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版/pipeline_cpu.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'E:/lab5_pipeline/pipeline_cpu_no_hazard' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 677 MB. GUI used memory: 53 MB. Current time: 5/10/22, 4:29:21 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:09 . Memory (MB): peak = 685.871 ; gain = 79.176 
+// Project name: pipeline_cpu; location: E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版; part: xc7a100tcsg324-1
+// [Engine Memory]: 677 MB (+13322kb) [00:00:26]
+dismissDialog("Open Project"); // by (cl)
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 111 MB (+1816kb) [00:28:33]
+// HMemoryUtils.trashcanNow. Engine heap size: 683 MB. GUI used memory: 52 MB. Current time: 5/10/22, 4:59:22 PM CST
+// Elapsed time: 2478 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v)]", 1); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v)]", 1); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v)]", 1); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v)]", 3); // B (F, cl)
+// PAPropertyPanels.initPanels (alu.v) elapsed time: 0.4s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), aluex : alu (alu.v)]", 9, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), dm : single_data_mem (single_data_mem.xci)]", 10, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), aluex : alu (alu.v)]", 9, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), alucontrolex : alucontrol (alucontrol.v)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), aluex : alu (alu.v)]", 9, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), regfile1 : regfile (regfile.v)]", 7, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), alucontrolex : alucontrol (alucontrol.v)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), dm : single_data_mem (single_data_mem.xci)]", 10, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), alucontrolex : alucontrol (alucontrol.v)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), Immex : Imm (Imm.v)]", 6, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), regfile1 : regfile (regfile.v)]", 7, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), regfile1 : regfile (regfile.v)]", 7, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), regfile1 : regfile (regfile.v)]", 7, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("regfile.v", 241, 232); // cl (w, cl)
+// Elapsed time: 38 seconds
+selectCodeEditor("regfile.v", 241, 203); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 69 seconds
+selectCodeEditor("regfile.v", 96, 269); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+selectCodeEditor("regfile.v", 101, 329); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("regfile.v", 108, 332); // cl (w, cl)
+selectCodeEditor("regfile.v", 190, 58); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("regfile.v", 112, 289); // cl (w, cl)
+selectCodeEditor("regfile.v", 111, 279); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("regfile.v", 174, 276); // cl (w, cl)
+// Elapsed time: 62 seconds
+selectCodeEditor("regfile.v", 21, 142); // cl (w, cl)
+selectCodeEditor("regfile.v", 26, 145); // cl (w, cl)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("regfile.v", 27, 141); // cl (w, cl)
+typeControlKey((HResource) null, "regfile.v", 'c'); // cl (w, cl)
+selectCodeEditor("regfile.v", 104, 277); // cl (w, cl)
+typeControlKey((HResource) null, "regfile.v", 'v'); // cl (w, cl)
+selectCodeEditor("regfile.v", 50, 434); // cl (w, cl)
+selectCodeEditor("regfile.v", 8, 293); // cl (w, cl)
+selectCodeEditor("regfile.v", 2, 104); // cl (w, cl)
+typeControlKey((HResource) null, "regfile.v", 'c'); // cl (w, cl)
+selectCodeEditor("regfile.v", 5, 292); // cl (w, cl)
+typeControlKey((HResource) null, "regfile.v", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("regfile.v", 0, 104); // cl (w, cl)
+selectCodeEditor("regfile.v", 81, 272); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("regfile.v", 128, 420); // cl (w, cl)
+selectCodeEditor("regfile.v", 113, 107); // cl (w, cl)
+selectCodeEditor("regfile.v", 125, 105); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE

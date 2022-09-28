@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 11 15:02:52 2022
+# Process ID: 7592
+# Current directory: E:/lab5_pipeline/final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10936 E:\lab5_pipeline\final\pipeline_cpu.xpr
+# Log file: E:/lab5_pipeline/final/vivado.log
+# Journal file: E:/lab5_pipeline/final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/lab5_pipeline/final/pipeline_cpu.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+launch_simulation
+source pipeline_sim.tcl
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/read1}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/read2}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/aluresult}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/pc}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/pcin}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/regfile1/REG_FILE}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/pduex/io_addr}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/pduex/io_dout}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/pduex/io_we}} 
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/rf_data}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/m_rf_addr}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/check}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/pduex/check_r}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim

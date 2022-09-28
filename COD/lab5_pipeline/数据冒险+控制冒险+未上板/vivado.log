@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May 24 21:37:06 2022
+# Process ID: 8768
+# Current directory: E:/计组/实验文件/lab5_pipeline/数据冒险+控制冒险+未上板
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8696 E:\计组\实验文件\lab5_pipeline\数据冒险+控制冒险+未上板\pipeline_cpu.xpr
+# Log file: E:/计组/实验文件/lab5_pipeline/数据冒险+控制冒险+未上板/vivado.log
+# Journal file: E:/计组/实验文件/lab5_pipeline/数据冒险+控制冒险+未上板\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/计组/实验文件/lab5_pipeline/数据冒险+控制冒险+未上板/pipeline_cpu.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/联想/OneDrive/桌面/test.coe/no_hazard _test - 副本.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/联想/OneDrive/桌面/test.coe/beq_text.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/联想/OneDrive/桌面/test.coe/load_use_text.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/联想/OneDrive/桌面/test.coe/load_use_text2.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/联想/OneDrive/桌面/test.coe/lw.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/联想/OneDrive/桌面/test.coe/load_use.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/联想/OneDrive/桌面/test.coe/ branch.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/联想/OneDrive/桌面/bs.coe/bs_mem10_.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:09 . Memory (MB): peak = 673.504 ; gain = 52.219
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 24 21:38:34 2022...

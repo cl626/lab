@@ -1,0 +1,152 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 14324
+License: Customer
+
+Current time: 	Wed May 11 23:23:52 CST 2022
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 50 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/software/vivado/vivado2019.1/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	D:/software/vivado/vivado2019.1/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	联想
+User home directory: C:/Users/联想
+User working directory: E:/lab5_pipeline/数据冒险+控制冒险+未上板
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/software/vivado/vivado2019.1/Vivado
+HDI_APPROOT: D:/software/vivado/vivado2019.1/Vivado/2019.1
+RDI_DATADIR: D:/software/vivado/vivado2019.1/Vivado/2019.1/data
+RDI_BINDIR: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/联想/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/联想/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/联想/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	D:/software/vivado/vivado2019.1/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	E:/lab5_pipeline/数据冒险+控制冒险+未上板/vivado.log
+Vivado journal file location: 	E:/lab5_pipeline/数据冒险+控制冒险+未上板/vivado.jou
+Engine tmp dir: 	E:/lab5_pipeline/数据冒险+控制冒险+未上板/.Xil/Vivado-14324-life
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/software/vivado/vivado2019.1/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: D:/software/vivado/vivado2019.1/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: D:/software/vivado/vivado2019.1/Vivado/2019.1
+XILINX_VIVADO: D:/software/vivado/vivado2019.1/Vivado/2019.1
+XILINX_VIVADO_HLS: D:/software/vivado/vivado2019.1/Vivado/2019.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 680 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 96 MB (+97732kb) [00:00:12]
+// [Engine Memory]: 612 MB (+490134kb) [00:00:12]
+// [GUI Memory]: 113 MB (+13354kb) [00:00:12]
+// [Engine Memory]: 643 MB (+562kb) [00:00:13]
+// [GUI Memory]: 120 MB (+1072kb) [00:00:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  3812 ms.
+// Tcl Message: open_project E:/lab5_pipeline/数据冒险+控制冒险+未上板/pipeline_cpu.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 52 MB. Current time: 5/11/22, 11:23:52 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 701.090 ; gain = 95.926 
+// Project name: pipeline_cpu; location: E:/lab5_pipeline/数据冒险+控制冒险+未上板; part: xc7a100tcsg324-1
+// [Engine Memory]: 680 MB (+4852kb) [00:00:16]
+dismissDialog("Open Project"); // by (cl)
+// a (cl): Critical Messages: addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v)]", 1); // B (F, cl)
+// PAPropertyPanels.initPanels (cpu.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v)]", 3, true); // B (F, cl) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v)]", 3); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), im : single_text_mem (single_text_mem.xci)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), im : single_text_mem (single_text_mem.xci)]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), im : single_text_mem (single_text_mem.xci)]", 4, false); // B (F, cl)
+// r (cl): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1477 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cT (E, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), im : single_text_mem (single_text_mem.xci)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), im : single_text_mem (single_text_mem.xci)]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cl): Re-customize IP: addNotify
+// [Engine Memory]: 735 MB (+22411kb) [00:00:34]
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cT (E, r)
+// HMemoryUtils.trashcanNow. Engine heap size: 739 MB. GUI used memory: 57 MB. Current time: 5/11/22, 11:24:15 PM CST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cl):  Run Simulation : addNotify
+// Tcl Message: generate_target Simulation [get_files E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'single_text_mem'... 
+// Tcl Message: ERROR: [Ipptcl 7-519] NULL COE Data pointer: Unable to open the file  
+// Tcl Message: ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors. 
+// Tcl Message: ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s). ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'single_text_mem'. Failed to generate 'Vivado Verilog Simulation' outputs:  ERROR: [IP_Flow 19-98] Generation of the IP CORE failed. Failed to generate IP 'single_text_mem'. Failed to generate 'Vivado Verilog Simulation' outputs:  
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [IP_Flow 19-98] Generation of the IP CORE failed. Failed to generate IP 'single_text_mem'. Failed to generate 'Vivado Verilog Simulation' outputs:   
+// HOptionPane Error: 'ERROR: [IP_Flow 19-98] Generation of the IP CORE failed. Failed to generate IP 'single_text_mem'. Failed to generate 'Vivado Verilog Simulation' outputs:  (Run Simulation)'
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// a (cl): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK (aH, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'c:/Users/联想/OneDrive/桌面/test.coe/load_use_text.coe'.. ]", 2, true); // ah (O, cl) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'c:/Users/联想/OneDrive/桌面/test.coe/load_use_text.coe'.. ]", 2, true); // ah (O, cl) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/ip'.. ]", 5, false); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [IP_Flow 19-1747] Failed to deliver file 'd:/software/vivado/vivado2019.1/Vivado/2019.1/data/ip/xilinx/dist_mem_gen_v8_0/hdl/mem_init_file.xit': ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.. . ]", 8, false); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'single_text_mem'. Failed to generate 'Vivado Verilog Simulation' outputs: . ]", 10, false); // ah (O, cl)

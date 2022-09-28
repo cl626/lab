@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\multibootheader",
+    "\\myOS",
+    "\\myOS\\dev",
+    "\\myOS\\include",
+    "\\userApp"
+  ],
+  "SelectedNode": "\\userApp\\startShell.c",
+  "PreviewInSolutionExplorer": false
+}

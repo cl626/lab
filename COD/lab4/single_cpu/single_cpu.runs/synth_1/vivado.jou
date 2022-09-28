@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 26 17:55:25 2022
+# Process ID: 2736
+# Current directory: E:/lab4/single_cpu/single_cpu.runs/synth_1
+# Command line: vivado.exe -log single.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source single.tcl
+# Log file: E:/lab4/single_cpu/single_cpu.runs/synth_1/single.vds
+# Journal file: E:/lab4/single_cpu/single_cpu.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source single.tcl -notrace

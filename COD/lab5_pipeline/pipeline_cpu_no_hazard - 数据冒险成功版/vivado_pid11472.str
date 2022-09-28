@@ -1,0 +1,150 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 11472
+License: Customer
+
+Current time: 	Tue May 10 15:59:11 CST 2022
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 51 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/software/vivado/vivado2019.1/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	D:/software/vivado/vivado2019.1/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	联想
+User home directory: C:/Users/联想
+User working directory: E:/lab5_pipeline/pipeline_cpu_no_hazard
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/software/vivado/vivado2019.1/Vivado
+HDI_APPROOT: D:/software/vivado/vivado2019.1/Vivado/2019.1
+RDI_DATADIR: D:/software/vivado/vivado2019.1/Vivado/2019.1/data
+RDI_BINDIR: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/联想/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/联想/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/联想/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	D:/software/vivado/vivado2019.1/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	E:/lab5_pipeline/pipeline_cpu_no_hazard/vivado.log
+Vivado journal file location: 	E:/lab5_pipeline/pipeline_cpu_no_hazard/vivado.jou
+Engine tmp dir: 	E:/lab5_pipeline/pipeline_cpu_no_hazard/.Xil/Vivado-11472-life
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/software/vivado/vivado2019.1/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: D:/software/vivado/vivado2019.1/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: D:/software/vivado/vivado2019.1/Vivado/2019.1
+XILINX_VIVADO: D:/software/vivado/vivado2019.1/Vivado/2019.1
+XILINX_VIVADO_HLS: D:/software/vivado/vivado2019.1/Vivado/2019.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 583 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: E:\lab5_pipeline\pipeline_cpu_no_hazard\pipeline_cpu.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// Tcl Message: open_project E:/lab5_pipeline/pipeline_cpu_no_hazard/pipeline_cpu.xpr 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 98 MB (+100581kb) [00:00:22]
+// [Engine Memory]: 599 MB (+476449kb) [00:00:22]
+// [GUI Memory]: 105 MB (+1479kb) [00:00:26]
+// WARNING: HEventQueue.dispatchEvent() is taking  7658 ms.
+// Tcl Message: open_project E:/lab5_pipeline/pipeline_cpu_no_hazard/pipeline_cpu.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 610 MB. GUI used memory: 53 MB. Current time: 5/10/22, 3:59:21 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:11 . Memory (MB): peak = 655.652 ; gain = 49.832 
+// Project name: pipeline_cpu; location: E:/lab5_pipeline/pipeline_cpu_no_hazard; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // by (cl)
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v)]", 1); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v)]", 3); // B (F, cl)
+// PAPropertyPanels.initPanels (cpu.v) elapsed time: 0.4s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v)]", 3, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v)]", 3, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1026 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v)]", 3, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (F, cl) - Node
+selectCodeEditor("cpu.v", 233, 263); // cl (w, cl)
+selectCodeEditor("cpu.v", 394, 245); // cl (w, cl)
+// Elapsed time: 28 seconds
+selectCodeEditor("cpu.v", 10, 269); // cl (w, cl)
+// Elapsed time: 48 seconds
+selectCodeEditor("cpu.v", 124, 158); // cl (w, cl)
+selectCodeEditor("cpu.v", 226, 161); // cl (w, cl)
+selectCodeEditor("cpu.v", 407, 173); // cl (w, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (F, cl)
+selectCodeEditor("cpu.v", 454, 167); // cl (w, cl)
+selectCodeEditor("cpu.v", 471, 170); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 231 seconds
+selectCodeEditor("cpu.v", 233, 229); // cl (w, cl)
+// Elapsed time: 130 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v)]", 3); // B (F, cl)
+// [GUI Memory]: 112 MB (+1920kb) [00:08:22]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), regfile1 : regfile (regfile.v)]", 7, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pipeline (single.v), cpuex : cpu (cpu.v), regfile1 : regfile (regfile.v)]", 7, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("regfile.v", 265, 324); // cl (w, cl)
+// Elapsed time: 72 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.v", 1); // k (j, cl)
+// Elapsed time: 342 seconds
+selectCodeEditor("cpu.v", 253, 211); // cl (w, cl)
+selectCodeEditor("cpu.v", 184, 142); // cl (w, cl)
+selectCodeEditor("cpu.v", 227, 215); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "regfile.v", 2); // k (j, cl)
+selectCodeEditor("regfile.v", 225, 206); // cl (w, cl)
+selectCodeEditor("regfile.v", 236, 241); // cl (w, cl)
+selectCodeEditor("regfile.v", 230, 205); // cl (w, cl)
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.v", 1); // k (j, cl)
+selectCodeEditor("cpu.v", 8, 280); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE

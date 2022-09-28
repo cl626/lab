@@ -1,0 +1,1414 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 26 15:48:03 2022
+# Process ID: 1060
+# Current directory: E:/lab4/single_cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1524 E:\lab4\single_cpu\single_cpu.xpr
+# Log file: E:/lab4/single_cpu/vivado.log
+# Journal file: E:/lab4/single_cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/lab4/single_cpu/single_cpu.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:09 . Memory (MB): peak = 723.969 ; gain = 112.715
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_data_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub_data.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_text_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xelab -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'ra3' [E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:48]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_behav -key {Behavioral:sim_1:Functional:sim} -tclbatch {sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file single_data_mem.mif
+xsim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 760.703 ; gain = 9.316
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 760.703 ; gain = 32.871
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/sim/single1/pduex/out1_a}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/sim/single1/pduex/out1_r}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_data_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub_data.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_text_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xelab -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'ra3' [E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:48]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file single_data_mem.mif
+relaunch_sim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 760.703 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_data_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub_data.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_text_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/sim/single_data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/sim/single_text_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_text_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alucontrol
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pdu_1cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xelab -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'ra3' [E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pdu_1cycle
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_text_mem
+Compiling module xil_defaultlib.cu
+Compiling module xil_defaultlib.Imm
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.alucontrol
+Compiling module xil_defaultlib.alu
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_data_mem
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.single
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file single_data_mem.mif
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 762.031 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_data_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub_data.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_text_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xelab -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'ra3' [E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:47]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_behav -key {Behavioral:sim_1:Functional:sim} -tclbatch {sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file single_data_mem.mif
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 775.211 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 775.211 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_data_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub_data.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_text_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/sim/single_data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/sim/single_text_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_text_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alucontrol
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pdu_1cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xelab -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'ra3' [E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pdu_1cycle
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_text_mem
+Compiling module xil_defaultlib.cu
+Compiling module xil_defaultlib.Imm
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.alucontrol
+Compiling module xil_defaultlib.alu
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_data_mem
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.single
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file single_data_mem.mif
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 775.211 ; gain = 0.000
+set_property -dict [list CONFIG.coefficient_file {E:/lab4/fib_text.coe}] [get_ips single_text_mem]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/lab4/fib_text.coe' provided. It will be converted relative to IP Instance files '../../../../../fib_text.coe'
+generate_target all [get_files  E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'single_text_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'single_text_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'single_text_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'single_text_mem'...
+catch { config_ip_cache -export [get_ips -all single_text_mem] }
+export_ip_user_files -of_objects [get_files E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci] -no_script -sync -force -quiet
+reset_run single_text_mem_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/lab4/single_cpu/single_cpu.runs/single_text_mem_synth_1
+
+launch_runs -jobs 4 single_text_mem_synth_1
+[Tue Apr 26 16:04:31 2022] Launched single_text_mem_synth_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/single_text_mem_synth_1/runme.log
+export_simulation -of_objects [get_files E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci] -directory E:/lab4/single_cpu/single_cpu.ip_user_files/sim_scripts -ip_user_files_dir E:/lab4/single_cpu/single_cpu.ip_user_files -ipstatic_source_dir E:/lab4/single_cpu/single_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/modelsim} {questa=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/questa} {riviera=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/riviera} {activehdl=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.coefficient_file {E:/lab4/fib_data.coe}] [get_ips single_data_mem]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/lab4/fib_data.coe' provided. It will be converted relative to IP Instance files '../../../../../fib_data.coe'
+generate_target all [get_files  E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/single_data_mem.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'single_data_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'single_data_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'single_data_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'single_data_mem'...
+catch { config_ip_cache -export [get_ips -all single_data_mem] }
+export_ip_user_files -of_objects [get_files E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/single_data_mem.xci] -no_script -sync -force -quiet
+reset_run single_data_mem_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/lab4/single_cpu/single_cpu.runs/single_data_mem_synth_1
+
+launch_runs -jobs 4 single_data_mem_synth_1
+[Tue Apr 26 16:04:59 2022] Launched single_data_mem_synth_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/single_data_mem_synth_1/runme.log
+export_simulation -of_objects [get_files E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/single_data_mem.xci] -directory E:/lab4/single_cpu/single_cpu.ip_user_files/sim_scripts -ip_user_files_dir E:/lab4/single_cpu/single_cpu.ip_user_files -ipstatic_source_dir E:/lab4/single_cpu/single_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/modelsim} {questa=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/questa} {riviera=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/riviera} {activehdl=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs synth_1 -jobs 4
+[Tue Apr 26 16:05:34 2022] Launched single_data_mem_synth_1, single_text_mem_synth_1...
+Run output will be captured here:
+single_data_mem_synth_1: E:/lab4/single_cpu/single_cpu.runs/single_data_mem_synth_1/runme.log
+single_text_mem_synth_1: E:/lab4/single_cpu/single_cpu.runs/single_text_mem_synth_1/runme.log
+[Tue Apr 26 16:05:34 2022] Launched synth_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Apr 26 16:08:55 2022] Launched impl_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Tue Apr 26 16:14:13 2022] Launched impl_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Apr 26 16:20:25 2022] Launched synth_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Apr 26 16:21:50 2022] Launched impl_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4 -scripts_only
+reset_run synth_1
+launch_runs synth_1 -jobs 4 -scripts_only
+launch_runs impl_1 -jobs 4 -scripts_only
+reset_run impl_1
+launch_runs impl_1 -jobs 4 -scripts_only
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4 -scripts_only
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Apr 26 16:29:51 2022] Launched synth_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Apr 26 16:33:06 2022] Launched impl_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/impl_1/runme.log
+add_bp {E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/sim.v} 11
+remove_bps -file {E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/sim.v} -line 11
+set_property -dict [list CONFIG.coefficient_file {E:/lab4/test.coe/testtext.coe}] [get_ips single_text_mem]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/lab4/test.coe/testtext.coe' provided. It will be converted relative to IP Instance files '../../../../../test.coe/testtext.coe'
+generate_target all [get_files  E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'single_text_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'single_text_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'single_text_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'single_text_mem'...
+catch { config_ip_cache -export [get_ips -all single_text_mem] }
+export_ip_user_files -of_objects [get_files E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci] -no_script -sync -force -quiet
+reset_run single_text_mem_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/lab4/single_cpu/single_cpu.runs/single_text_mem_synth_1
+
+launch_runs -jobs 4 single_text_mem_synth_1
+[Tue Apr 26 16:55:25 2022] Launched single_text_mem_synth_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/single_text_mem_synth_1/runme.log
+export_simulation -of_objects [get_files E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci] -directory E:/lab4/single_cpu/single_cpu.ip_user_files/sim_scripts -ip_user_files_dir E:/lab4/single_cpu/single_cpu.ip_user_files -ipstatic_source_dir E:/lab4/single_cpu/single_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/modelsim} {questa=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/questa} {riviera=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/riviera} {activehdl=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.coefficient_file {E:/lab4/test.coe/testdata.coe}] [get_ips single_data_mem]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/lab4/test.coe/testdata.coe' provided. It will be converted relative to IP Instance files '../../../../../test.coe/testdata.coe'
+generate_target all [get_files  E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/single_data_mem.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'single_data_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'single_data_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'single_data_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'single_data_mem'...
+catch { config_ip_cache -export [get_ips -all single_data_mem] }
+export_ip_user_files -of_objects [get_files E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/single_data_mem.xci] -no_script -sync -force -quiet
+reset_run single_data_mem_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/lab4/single_cpu/single_cpu.runs/single_data_mem_synth_1
+
+launch_runs -jobs 4 single_data_mem_synth_1
+[Tue Apr 26 16:56:15 2022] Launched single_data_mem_synth_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/single_data_mem_synth_1/runme.log
+export_simulation -of_objects [get_files E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/single_data_mem.xci] -directory E:/lab4/single_cpu/single_cpu.ip_user_files/sim_scripts -ip_user_files_dir E:/lab4/single_cpu/single_cpu.ip_user_files -ipstatic_source_dir E:/lab4/single_cpu/single_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/modelsim} {questa=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/questa} {riviera=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/riviera} {activehdl=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/simulate.log"
+INFO: [Common 17-17] undo 'relaunch_sim'
+INFO: [Common 17-17] undo 'relaunch_sim'
+ERROR: [Common 17-69] Command failed: boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/simulate.log"
+reset_run single_data_mem_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/lab4/single_cpu/single_cpu.runs/single_data_mem_synth_1
+
+reset_run single_text_mem_synth_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_data_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_text_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub_data.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_text.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/sim/single_data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/sim/single_text_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_text_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alucontrol
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pdu_1cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xelab -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'ra3' [E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pdu_1cycle
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_text_mem
+Compiling module xil_defaultlib.cu
+Compiling module xil_defaultlib.Imm
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.alucontrol
+Compiling module xil_defaultlib.alu
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_data_mem
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.single
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_behav -key {Behavioral:sim_1:Functional:sim} -tclbatch {sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file single_data_mem.mif
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1101.113 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1101.113 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_data_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_text_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub_data.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_text.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/sim/single_data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/sim/single_text_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_text_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alucontrol
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pdu_1cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xelab -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'ra3' [E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pdu_1cycle
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_text_mem
+Compiling module xil_defaultlib.cu
+Compiling module xil_defaultlib.Imm
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.alucontrol
+Compiling module xil_defaultlib.alu
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_data_mem
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.single
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file single_data_mem.mif
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1101.113 ; gain = 0.000
+delete_ip_run [get_files -of_objects [get_fileset single_text_mem] E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci]
+INFO: [Project 1-386] Moving file 'E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci' from fileset 'single_text_mem' to fileset 'sources_1'.
+set_property generate_synth_checkpoint false [get_files  E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci]
+generate_target all [get_files  E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'single_text_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'single_text_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'single_text_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'single_text_mem'...
+export_ip_user_files -of_objects [get_files E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci] -directory E:/lab4/single_cpu/single_cpu.ip_user_files/sim_scripts -ip_user_files_dir E:/lab4/single_cpu/single_cpu.ip_user_files -ipstatic_source_dir E:/lab4/single_cpu/single_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/modelsim} {questa=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/questa} {riviera=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/riviera} {activehdl=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+delete_ip_run [get_files -of_objects [get_fileset single_data_mem] E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/single_data_mem.xci]
+INFO: [Project 1-386] Moving file 'E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/single_data_mem.xci' from fileset 'single_data_mem' to fileset 'sources_1'.
+set_property generate_synth_checkpoint false [get_files  E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/single_data_mem.xci]
+generate_target all [get_files  E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/single_data_mem.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'single_data_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'single_data_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'single_data_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'single_data_mem'...
+export_ip_user_files -of_objects [get_files E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/single_data_mem.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/single_data_mem.xci] -directory E:/lab4/single_cpu/single_cpu.ip_user_files/sim_scripts -ip_user_files_dir E:/lab4/single_cpu/single_cpu.ip_user_files -ipstatic_source_dir E:/lab4/single_cpu/single_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/modelsim} {questa=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/questa} {riviera=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/riviera} {activehdl=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_data_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_text_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub_data.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_text.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/sim/single_data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/sim/single_text_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_text_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alucontrol
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pdu_1cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xelab -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'ra3' [E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pdu_1cycle
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_text_mem
+Compiling module xil_defaultlib.cu
+Compiling module xil_defaultlib.Imm
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.alucontrol
+Compiling module xil_defaultlib.alu
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_data_mem
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.single
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file single_data_mem.mif
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1101.113 ; gain = 0.000
+update_compile_order -fileset sources_1
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/sim/single1/cpuex/PCin}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_data_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_text_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub_data.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_text.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/sim/single_data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/sim/single_text_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_text_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alucontrol
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pdu_1cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xelab -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'ra3' [E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pdu_1cycle
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_text_mem
+Compiling module xil_defaultlib.cu
+Compiling module xil_defaultlib.Imm
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.alucontrol
+Compiling module xil_defaultlib.alu
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_data_mem
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.single
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file single_data_mem.mif
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1101.113 ; gain = 0.000
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/sim/single1/cpuex/regfile1/REG_FILE}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_data_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_text_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub_data.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_text.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/sim/single_data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/sim/single_text_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_text_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alucontrol
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pdu_1cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xelab -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'ra3' [E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pdu_1cycle
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_text_mem
+Compiling module xil_defaultlib.cu
+Compiling module xil_defaultlib.Imm
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.alucontrol
+Compiling module xil_defaultlib.alu
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_data_mem
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.single
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file single_data_mem.mif
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1101.113 ; gain = 0.000
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/sim/single1/cpuex/dm/d}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_data_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_text_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub_data.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_text.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xelab -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'ra3' [E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:47]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file single_data_mem.mif
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1101.113 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/lab4/single_cpu/single_cpu.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Apr 26 17:06:38 2022] Launched synth_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Apr 26 17:08:21 2022] Launched impl_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/sim.v] -no_script -reset -force -quiet
+remove_files  E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/sim.v
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/lab4/single_cpu/single_cpu.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Apr 26 17:10:16 2022] Launched synth_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/synth_1/runme.log
+file mkdir E:/lab4/single_cpu/single_cpu.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/lab4/single_cpu/single_cpu.srcs/sim_1/new/single_sim.v w ]
+add_files -fileset sim_1 E:/lab4/single_cpu/single_cpu.srcs/sim_1/new/single_sim.v
+update_compile_order -fileset sim_1
+launch_runs impl_1 -jobs 4
+[Tue Apr 26 17:17:43 2022] Launched impl_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/impl_1/runme.log
+update_compile_order -fileset sim_1
+launch_simulation
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/simulate.log"
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 26 17:21:25 2022] Launched impl_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/impl_1/runme.log
+launch_simulation
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/simulate.log"
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 130 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.293 . Memory (MB): peak = 1987.293 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.293 . Memory (MB): peak = 1987.293 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1987.293 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 82 instances were transformed.
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 64 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 18 instances
+
+open_run: Time (s): cpu = 00:00:53 ; elapsed = 00:00:43 . Memory (MB): peak = 2097.551 ; gain = 996.438
+launch_simulation
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/simulate.log"
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'single_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_data_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_text_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub_data.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_text.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj single_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sim_1/new/single_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_sim
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xelab -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot single_sim_behav xil_defaultlib.single_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot single_sim_behav xil_defaultlib.single_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'check' [E:/lab4/single_cpu/single_cpu.srcs/sim_1/new/single_sim.v:19]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'ra3' [E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:47]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'ready' is not permitted [E:/lab4/single_cpu/single_cpu.srcs/sim_1/new/single_sim.v:18]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'check' is not permitted [E:/lab4/single_cpu/single_cpu.srcs/sim_1/new/single_sim.v:19]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'single_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_data_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_text_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub_data.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_text.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj single_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/sim/single_data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/sim/single_text_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_text_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alucontrol
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pdu_1cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sim_1/new/single_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_sim
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xelab -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot single_sim_behav xil_defaultlib.single_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot single_sim_behav xil_defaultlib.single_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'ra3' [E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pdu_1cycle
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_text_mem
+Compiling module xil_defaultlib.cu
+Compiling module xil_defaultlib.Imm
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.alucontrol
+Compiling module xil_defaultlib.alu
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_data_mem
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.single
+Compiling module xil_defaultlib.single_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot single_sim_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/xsim.dir/single_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/xsim.dir/single_sim_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Apr 26 17:27:15 2022. For additional details about this file, please refer to the WebTalk help file at D:/software/vivado/vivado2019.1/Vivado/2019.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 91.633 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr 26 17:27:15 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 2255.133 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "single_sim_behav -key {Behavioral:sim_1:Functional:single_sim} -tclbatch {single_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source single_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file single_data_mem.mif
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'single_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 2256.117 ; gain = 0.984
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/single_sim/single1/pduex/clk_cpu}} 
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 2259.281 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'single_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_data_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_text_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub_data.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_text.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj single_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xelab -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot single_sim_behav xil_defaultlib.single_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot single_sim_behav xil_defaultlib.single_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'ra3' [E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:47]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file single_data_mem.mif
+relaunch_xsim_kernel: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2259.281 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:23 . Memory (MB): peak = 2259.281 ; gain = 0.000
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/single_sim/single1/cpuex/PCin}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'single_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_data_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_text_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub_data.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_text.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj single_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xelab -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot single_sim_behav xil_defaultlib.single_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot single_sim_behav xil_defaultlib.single_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'ra3' [E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:47]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file single_data_mem.mif
+relaunch_xsim_kernel: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2259.281 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2259.281 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'single_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_data_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/single_text_mem.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testtext.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/testdata.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/sub_data.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_text.coe'
+INFO: [SIM-utils-43] Exported 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim/fib_data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj single_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/sim/single_data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/sim/single_text_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_text_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alucontrol
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pdu_1cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab4/single_cpu/single_cpu.srcs/sim_1/new/single_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_sim
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab4/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xelab -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot single_sim_behav xil_defaultlib.single_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/vivado2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 96354f9b74cd439a8d7c44e808f3ea96 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot single_sim_behav xil_defaultlib.single_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'ra3' [E:/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pdu_1cycle
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_text_mem
+Compiling module xil_defaultlib.cu
+Compiling module xil_defaultlib.Imm
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.alucontrol
+Compiling module xil_defaultlib.alu
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.single_data_mem
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.single
+Compiling module xil_defaultlib.single_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot single_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file single_data_mem.mif
+relaunch_xsim_kernel: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2259.281 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 2259.281 ; gain = 0.000
+set_property -dict [list CONFIG.coefficient_file {E:/lab4/test.coe/fib_text.coe}] [get_ips single_text_mem]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/lab4/test.coe/fib_text.coe' provided. It will be converted relative to IP Instance files '../../../../../test.coe/fib_text.coe'
+generate_target all [get_files  E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'single_text_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'single_text_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'single_text_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'single_text_mem'...
+export_ip_user_files -of_objects [get_files E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci] -directory E:/lab4/single_cpu/single_cpu.ip_user_files/sim_scripts -ip_user_files_dir E:/lab4/single_cpu/single_cpu.ip_user_files -ipstatic_source_dir E:/lab4/single_cpu/single_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/modelsim} {questa=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/questa} {riviera=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/riviera} {activehdl=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.coefficient_file {E:/lab4/test.coe/fib_data.coe}] [get_ips single_data_mem]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/lab4/test.coe/fib_data.coe' provided. It will be converted relative to IP Instance files '../../../../../test.coe/fib_data.coe'
+generate_target all [get_files  E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/single_data_mem.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'single_data_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'single_data_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'single_data_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'single_data_mem'...
+export_ip_user_files -of_objects [get_files E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/single_data_mem.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/single_data_mem.xci] -directory E:/lab4/single_cpu/single_cpu.ip_user_files/sim_scripts -ip_user_files_dir E:/lab4/single_cpu/single_cpu.ip_user_files -ipstatic_source_dir E:/lab4/single_cpu/single_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/modelsim} {questa=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/questa} {riviera=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/riviera} {activehdl=E:/lab4/single_cpu/single_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/lab4/single_cpu/single_cpu.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Apr 26 17:55:20 2022] Launched synth_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Apr 26 17:57:12 2022] Launched impl_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 26 18:00:42 2022] Launched impl_1...
+Run output will be captured here: E:/lab4/single_cpu/single_cpu.runs/impl_1/runme.log

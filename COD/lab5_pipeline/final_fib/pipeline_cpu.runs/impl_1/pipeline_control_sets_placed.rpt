@@ -1,0 +1,128 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed May 11 18:48:57 2022
+| Host         : life running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file pipeline_control_sets_placed.rpt
+| Design       : pipeline
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    50 |
+|    Minimum number of control sets                        |    50 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    51 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    50 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    42 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1246 |          683 |
+| No           | No                    | Yes                    |              28 |            9 |
+| No           | Yes                   | No                     |              17 |            7 |
+| Yes          | No                    | No                     |             165 |           63 |
+| Yes          | No                    | Yes                    |              80 |           20 |
+| Yes          | Yes                   | No                     |              37 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------+-------------------------------------------------------------------------------------------+-----------------------------------+------------------+----------------+
+|             Clock Signal            |                                       Enable Signal                                       |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++-------------------------------------+-------------------------------------------------------------------------------------------+-----------------------------------+------------------+----------------+
+|  cpuex/hazard_branch1/dflush_reg/G0 |                                                                                           |                                   |                1 |              1 |
+|  cpuex/id_ex1/ctrl_reg[0]_0         |                                                                                           |                                   |                1 |              1 |
+|  clk_IBUF_BUFG                      | cpuex/aluex/ready_r0_out                                                                  | rst_IBUF                          |                1 |              1 |
+|  cpuex/if_id1/ir_reg[2]_0           |                                                                                           | cpuex/aluex/ctrl_reg[8]           |                1 |              2 |
+|  clk_IBUF_BUFG                      | cpuex/aluex/E[0]                                                                          | rst_IBUF                          |                1 |              5 |
+|  clk_IBUF_BUFG                      | pduex/cnt_m_rf[4]_i_1_n_9                                                                 | rst_IBUF                          |                4 |             10 |
+|  clk_IBUF_BUFG                      |                                                                                           |                                   |               10 |             12 |
+|  clk_cpu_BUFG                       |                                                                                           | cpuex/hazard_branch1/SR[0]        |                6 |             15 |
+|  clk_IBUF_BUFG                      |                                                                                           | rst_IBUF                          |                9 |             28 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_10[0]  |                                                                                           |                                   |               15 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_11[0]  |                                                                                           |                                   |               14 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_3[0]   |                                                                                           |                                   |               15 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_7[0]   |                                                                                           |                                   |               15 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_16[0]  |                                                                                           |                                   |               23 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_4[0]   |                                                                                           |                                   |               15 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_6[0]   |                                                                                           |                                   |               16 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_22[0]  |                                                                                           |                                   |               15 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_8[0]   |                                                                                           |                                   |               22 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_5[0]   |                                                                                           |                                   |               18 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_17[0]  |                                                                                           |                                   |               22 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_21[0]  |                                                                                           |                                   |               21 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_2[0]   |                                                                                           |                                   |               16 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_9[0]   |                                                                                           |                                   |               16 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_20[0]  |                                                                                           |                                   |               18 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_23[0]  |                                                                                           |                                   |               16 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_18[0]  |                                                                                           |                                   |               17 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_12[0]  |                                                                                           |                                   |               14 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_13[0]  |                                                                                           |                                   |               17 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_14[0]  |                                                                                           |                                   |               16 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_15[0]  |                                                                                           |                                   |               15 |             32 |
+|  clk_IBUF_BUFG                      | cpuex/aluex/ctrl_reg[0]_0[0]                                                              | rst_IBUF                          |                5 |             32 |
+|  cpuex/mem_wb1/ctrlw_reg[18]_19[0]  |                                                                                           |                                   |               14 |             32 |
+|  cpuex/mem_wb1/E[0]                 |                                                                                           |                                   |               18 |             32 |
+|  clk_cpu_BUFG                       | cpuex/hazard_branch1/fstall_reg_0                                                         | rst_IBUF                          |                9 |             32 |
+|  clk_cpu_BUFG                       | cpuex/hazard_branch1/E[0]                                                                 |                                   |               16 |             32 |
+|  n_4_440_BUFG                       |                                                                                           |                                   |               17 |             32 |
+|  n_1_437_BUFG                       |                                                                                           |                                   |               25 |             32 |
+|  n_3_439_BUFG                       |                                                                                           |                                   |               20 |             32 |
+|  n_8_444_BUFG                       |                                                                                           |                                   |               21 |             32 |
+|  n_6_442_BUFG                       |                                                                                           |                                   |               20 |             32 |
+|  n_7_443_BUFG                       |                                                                                           |                                   |               21 |             32 |
+|  n_2_438_BUFG                       |                                                                                           |                                   |               22 |             32 |
+|  n_0_2155_BUFG                      |                                                                                           |                                   |               11 |             32 |
+|  n_5_441_BUFG                       |                                                                                           |                                   |               20 |             32 |
+|  regfile1/REG_FILE                  |                                                                                           |                                   |               28 |             32 |
+|  clk_cpu_BUFG                       | cpuex/hazard_branch1/fstall_reg_0                                                         | cpuex/hazard_branch1/dflush_reg/Q |               11 |             37 |
+|  clk_cpu_BUFG                       | cpuex/dm/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_0_127_0_0_i_1_n_9   |                                   |               32 |            128 |
+|  clk_cpu_BUFG                       | cpuex/dm/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_128_255_0_0_i_1_n_9 |                                   |               32 |            128 |
+|  clk_cpu_BUFG                       | cpuex/hazard_branch1/eflush_reg_0[0]                                                      |                                   |               47 |            133 |
+|  clk_cpu_BUFG                       |                                                                                           |                                   |               78 |            176 |
++-------------------------------------+-------------------------------------------------------------------------------------------+-----------------------------------+------------------+----------------+
+
+

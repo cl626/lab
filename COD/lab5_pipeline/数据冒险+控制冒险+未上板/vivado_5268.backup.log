@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon May 23 20:51:12 2022
+# Process ID: 5268
+# Current directory: E:/计组/实验文件/lab5_pipeline/数据冒险+控制冒险+未上板
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7160 E:\计组\实验文件\lab5_pipeline\数据冒险+控制冒险+未上板\pipeline_cpu.xpr
+# Log file: E:/计组/实验文件/lab5_pipeline/数据冒险+控制冒险+未上板/vivado.log
+# Journal file: E:/计组/实验文件/lab5_pipeline/数据冒险+控制冒险+未上板\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/计组/实验文件/lab5_pipeline/数据冒险+控制冒险+未上板/pipeline_cpu.xpr
+INFO: [Project 1-313] Project file moved from 'E:/lab5_pipeline/数据冒险+控制冒险+未上板' since last save.
+WARNING: [Project 1-312] File not found as 'E:/计组/实验文件/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/single_data_mem.xci'; using path 'E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/single_data_mem.xci' instead.
+WARNING: [Project 1-312] File not found as 'E:/计组/实验文件/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci'; using path 'E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci' instead.
+WARNING: [Project 1-312] File not found as 'E:/计组/实验文件/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v'; using path 'E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/计组/实验文件/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v'; using path 'E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/计组/实验文件/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v'; using path 'E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/计组/实验文件/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v'; using path 'E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/计组/实验文件/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v'; using path 'E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/计组/实验文件/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v'; using path 'E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/计组/实验文件/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v'; using path 'E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/计组/实验文件/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v'; using path 'E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/计组/实验文件/计组/实验文件/lab4/test.coe/fib_data.coe'; using path 'E:/计组/实验文件/lab4/test.coe/fib_data.coe' instead.
+WARNING: [Project 1-312] File not found as 'E:/计组/实验文件/计组/实验文件/lab4/test.coe/fib_text.coe'; using path 'E:/计组/实验文件/lab4/test.coe/fib_text.coe' instead.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/联想/OneDrive/桌面/test.coe/no_hazard _test - 副本.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/联想/OneDrive/桌面/test.coe/beq_text.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/联想/OneDrive/桌面/test.coe/load_use_text.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/联想/OneDrive/桌面/test.coe/load_use_text2.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/联想/OneDrive/桌面/test.coe/lw.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/联想/OneDrive/桌面/test.coe/load_use.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/联想/OneDrive/桌面/test.coe/ branch.coe'.
+WARNING: [Project 1-312] File not found as 'E:/计组/实验文件/计组/实验文件/lab5_pipeline/test.coe/hazard_text_2.coe'; using path 'E:/计组/实验文件/lab5_pipeline/test.coe/hazard_text_2.coe' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/vivado/vivado2019.1/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 23 20:51:58 2022...

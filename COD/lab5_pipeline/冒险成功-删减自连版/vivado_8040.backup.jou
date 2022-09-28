@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May 10 17:21:57 2022
+# Process ID: 8040
+# Current directory: E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7264 E:\lab5_pipeline\pipeline_cpu_no_hazard - 数据冒险成功版\pipeline_cpu.xpr
+# Log file: E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版/vivado.log
+# Journal file: E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版/pipeline_cpu.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source pipeline_sim.tcl
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/read1}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/read2}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/aluresult}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/pc}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/ir}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/forward1/afwd}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/forward1/bfwd}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/pcin}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/regfile1/rd1}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/regfile1/rd2}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/hazard_branch1/dstall}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/id_ex1/a}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/id_ex1/b}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/regfile1/ra1}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/regfile1/ra2}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/command}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/regfile1/wa}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim

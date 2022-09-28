@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\myOS",
+    "\\myOS\\include",
+    "\\myOS\\kernel",
+    "\\myOS\\kernel\\mem",
+    "\\userApp"
+  ],
+  "SelectedNode": "\\myOS\\kernel\\mem\\dPartition.c",
+  "PreviewInSolutionExplorer": false
+}

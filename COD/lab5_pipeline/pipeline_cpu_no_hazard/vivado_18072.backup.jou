@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May  4 18:44:42 2022
+# Process ID: 18072
+# Current directory: E:/lab5_pipeline/pipeline_cpu_no_hazard
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11200 E:\lab5_pipeline\pipeline_cpu_no_hazard\pipeline_cpu.xpr
+# Log file: E:/lab5_pipeline/pipeline_cpu_no_hazard/vivado.log
+# Journal file: E:/lab5_pipeline/pipeline_cpu_no_hazard\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/lab5_pipeline/pipeline_cpu_no_hazard/pipeline_cpu.xpr
+update_compile_order -fileset sources_1

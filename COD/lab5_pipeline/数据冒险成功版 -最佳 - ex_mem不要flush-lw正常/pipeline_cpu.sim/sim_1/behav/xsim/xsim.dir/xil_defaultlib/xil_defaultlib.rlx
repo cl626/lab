@@ -1,0 +1,22 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳/pipeline_cpu.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳/pipeline_cpu.srcs/sim_1/new/pipeline_sim.v,1651979742,verilog,,,,pipeline_sim,,,,,,,,
+E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳/pipeline_cpu.srcs/sources_1/new/ex_mem.v,1652237371,verilog,,E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳/pipeline_cpu.srcs/sources_1/new/forward.v,,ex_mem,,,,,,,,
+E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳/pipeline_cpu.srcs/sources_1/new/forward.v,1652177161,verilog,,E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳/pipeline_cpu.srcs/sources_1/new/hazard.v,,forward,,,,,,,,
+E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳/pipeline_cpu.srcs/sources_1/new/hazard.v,1652169185,verilog,,E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳/pipeline_cpu.srcs/sources_1/new/id_ex.v,,hazard_branch,,,,,,,,
+E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳/pipeline_cpu.srcs/sources_1/new/id_ex.v,1652183401,verilog,,E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳/pipeline_cpu.srcs/sources_1/new/if_id.v,,id_ex,,,,,,,,
+E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳/pipeline_cpu.srcs/sources_1/new/if_id.v,1652183546,verilog,,E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳/pipeline_cpu.srcs/sources_1/new/mem_wb.v,,if_id,,,,,,,,
+E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳/pipeline_cpu.srcs/sources_1/new/mem_wb.v,1651659418,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v,,mem_wb,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/sim/single_data_mem.v,1652015572,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/sim/single_text_mem.v,,single_data_mem,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/sim/single_text_mem.v,1652248123,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v,,single_text_mem,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v,1652187650,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v,,Imm,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v,1652182625,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v,,alu,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v,1650604700,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v,,alucontrol,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v,1652241680,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v,,cpu,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v,1652183260,verilog,,E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳/pipeline_cpu.srcs/sources_1/new/ex_mem.v,,cu,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v,1651645631,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v,,pdu,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v,1652192606,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v,,regfile,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v,1651978025,verilog,,E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳/pipeline_cpu.srcs/sim_1/new/pipeline_sim.v,,pipeline,,,,,,,,

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 11 23:23:33 2022
+# Process ID: 14324
+# Current directory: E:/lab5_pipeline/数据冒险+控制冒险+未上板
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3684 E:\lab5_pipeline\数据冒险+控制冒险+未上板\pipeline_cpu.xpr
+# Log file: E:/lab5_pipeline/数据冒险+控制冒险+未上板/vivado.log
+# Journal file: E:/lab5_pipeline/数据冒险+控制冒险+未上板\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/lab5_pipeline/数据冒险+控制冒险+未上板/pipeline_cpu.xpr
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci]

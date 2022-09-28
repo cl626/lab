@@ -1,0 +1,31 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file single_data_mem.mif
+WARNING in pipeline_sim.pipeline1.cpuex.dm.inst at time                35000 ns: 
+Reading from out-of-range address. Max address in pipeline_sim.pipeline1.cpuex.dm.inst is         255
+WARNING in pipeline_sim.pipeline1.cpuex.dm.inst at time               135000 ns: 
+Reading from out-of-range address. Max address in pipeline_sim.pipeline1.cpuex.dm.inst is         255
+WARNING in pipeline_sim.pipeline1.cpuex.dm.inst at time               215000 ns: 
+Reading from out-of-range address. Max address in pipeline_sim.pipeline1.cpuex.dm.inst is         255
+WARNING in pipeline_sim.pipeline1.cpuex.dm.inst at time               295000 ns: 
+Reading from out-of-range address. Max address in pipeline_sim.pipeline1.cpuex.dm.inst is         255
+WARNING in pipeline_sim.pipeline1.cpuex.dm.inst at time               355000 ns: 
+Reading from out-of-range address. Max address in pipeline_sim.pipeline1.cpuex.dm.inst is         255
+WARNING in pipeline_sim.pipeline1.cpuex.dm.inst at time               435000 ns: 
+Reading from out-of-range address. Max address in pipeline_sim.pipeline1.cpuex.dm.inst is         255
+WARNING in pipeline_sim.pipeline1.cpuex.dm.inst at time               515000 ns: 
+Reading from out-of-range address. Max address in pipeline_sim.pipeline1.cpuex.dm.inst is         255
+WARNING in pipeline_sim.pipeline1.cpuex.dm.inst at time               595000 ns: 
+Reading from out-of-range address. Max address in pipeline_sim.pipeline1.cpuex.dm.inst is         255
+WARNING in pipeline_sim.pipeline1.cpuex.dm.inst at time               675000 ns: 
+Reading from out-of-range address. Max address in pipeline_sim.pipeline1.cpuex.dm.inst is         255
+WARNING in pipeline_sim.pipeline1.cpuex.dm.inst at time               755000 ns: 
+Reading from out-of-range address. Max address in pipeline_sim.pipeline1.cpuex.dm.inst is         255
+WARNING in pipeline_sim.pipeline1.cpuex.dm.inst at time               835000 ns: 
+Reading from out-of-range address. Max address in pipeline_sim.pipeline1.cpuex.dm.inst is         255
+WARNING in pipeline_sim.pipeline1.cpuex.dm.inst at time               915000 ns: 
+Reading from out-of-range address. Max address in pipeline_sim.pipeline1.cpuex.dm.inst is         255
+WARNING in pipeline_sim.pipeline1.cpuex.dm.inst at time               995000 ns: 
+Reading from out-of-range address. Max address in pipeline_sim.pipeline1.cpuex.dm.inst is         255

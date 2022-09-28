@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 11 14:48:52 2022
+# Process ID: 13892
+# Current directory: E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5824 E:\lab5_pipeline\pipeline_cpu_no_hazard - 数据冒险成功版 -最佳\pipeline_cpu.xpr
+# Log file: E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳/vivado.log
+# Journal file: E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/lab5_pipeline/pipeline_cpu_no_hazard - 数据冒险成功版 -最佳/pipeline_cpu.xpr}
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.coefficient_file {E:/lab5_pipeline/test.coe/hazard_text.coe}] [get_ips single_text_mem]
+generate_target all [get_files E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/single_text_mem.xci]
+synth_design -rtl -name rtl_1

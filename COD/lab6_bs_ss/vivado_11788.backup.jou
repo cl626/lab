@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 25 10:39:05 2022
+# Process ID: 11788
+# Current directory: C:/Users/联想/OneDrive/桌面/final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10464 C:\Users\联想\OneDrive\桌面\final\pipeline_cpu.xpr
+# Log file: C:/Users/联想/OneDrive/桌面/final/vivado.log
+# Journal file: C:/Users/联想/OneDrive/桌面/final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/联想/OneDrive/桌面/final/pipeline_cpu.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source pipeline_sim.tcl
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/pc}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/pc}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/command}} 
+current_wave_config {Untitled 1}
+add_wave {{/pipeline_sim/pipeline1/cpuex/regfile1}} 
+relaunch_sim
+close_sim
+launch_simulation
+source pipeline_sim.tcl
+current_wave_config {Untitled 2}
+add_wave {{/pipeline_sim/pipeline1/cpuex/pc}} 
+current_wave_config {Untitled 2}
+add_wave {{/pipeline_sim/pipeline1/cpuex/command}} 
+current_wave_config {Untitled 2}
+add_wave {{/pipeline_sim/pipeline1/cpuex/regfile1/REG_FILE}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/pipeline_sim/pipeline1/cpuex/aluex/alucontrol}} 
+current_wave_config {Untitled 2}
+add_wave {{/pipeline_sim/pipeline1/cpuex/aluex/func3}} 
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/pipeline_sim/pipeline1/cpuex/aluex/aluresult}} 
+relaunch_sim
+relaunch_sim
+run 100 us
+step
+set_property -dict [list CONFIG.coefficient_file {C:/Users/联想/OneDrive/桌面/bs.coe/bubble.coe}] [get_ips single_text_mem]
+relaunch_sim
+run 100 us
+step

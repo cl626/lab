@@ -1,0 +1,22 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/sim/single_data_mem.v,1652315820,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/sim/single_text_mem.v,,single_data_mem,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/sim/single_text_mem.v,1653136184,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v,,single_text_mem,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v,1653136771,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v,,Imm,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v,1652182625,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v,,alu,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v,1650604700,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v,,alucontrol,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v,1652327825,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v,,cpu,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v,1652268460,verilog,,E:/计组/实验文件/lab5_pipeline/final/pipeline_cpu.srcs/sources_1/new/ex_mem.v,,cu,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v,1651645631,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v,,pdu,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v,1653117237,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v,,regfile,,,,,,,,
+E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v,1652319418,verilog,,E:/计组/实验文件/lab5_pipeline/final/pipeline_cpu.srcs/sim_1/new/pipeline_sim.v,,pipeline,,,,,,,,
+E:/计组/实验文件/lab5_pipeline/final/pipeline_cpu.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+E:/计组/实验文件/lab5_pipeline/final/pipeline_cpu.srcs/sim_1/new/pipeline_sim.v,1653136038,verilog,,,,pipeline_sim,,,,,,,,
+E:/计组/实验文件/lab5_pipeline/final/pipeline_cpu.srcs/sources_1/new/ex_mem.v,1652251530,verilog,,E:/计组/实验文件/lab5_pipeline/final/pipeline_cpu.srcs/sources_1/new/forward.v,,ex_mem,,,,,,,,
+E:/计组/实验文件/lab5_pipeline/final/pipeline_cpu.srcs/sources_1/new/forward.v,1652278532,verilog,,E:/计组/实验文件/lab5_pipeline/final/pipeline_cpu.srcs/sources_1/new/hazard.v,,forward,,,,,,,,
+E:/计组/实验文件/lab5_pipeline/final/pipeline_cpu.srcs/sources_1/new/hazard.v,1652280358,verilog,,E:/计组/实验文件/lab5_pipeline/final/pipeline_cpu.srcs/sources_1/new/id_ex.v,,hazard_branch,,,,,,,,
+E:/计组/实验文件/lab5_pipeline/final/pipeline_cpu.srcs/sources_1/new/id_ex.v,1653134440,verilog,,E:/计组/实验文件/lab5_pipeline/final/pipeline_cpu.srcs/sources_1/new/if_id.v,,id_ex,,,,,,,,
+E:/计组/实验文件/lab5_pipeline/final/pipeline_cpu.srcs/sources_1/new/if_id.v,1652318413,verilog,,E:/计组/实验文件/lab5_pipeline/final/pipeline_cpu.srcs/sources_1/new/mem_wb.v,,if_id,,,,,,,,
+E:/计组/实验文件/lab5_pipeline/final/pipeline_cpu.srcs/sources_1/new/mem_wb.v,1651659418,verilog,,E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v,,mem_wb,,,,,,,,

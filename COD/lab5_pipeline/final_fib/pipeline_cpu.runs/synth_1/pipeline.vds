@@ -1,0 +1,942 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 11 18:16:54 2022
+# Process ID: 3260
+# Current directory: E:/lab5_pipeline/final_fib/pipeline_cpu.runs/synth_1
+# Command line: vivado.exe -log pipeline.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pipeline.tcl
+# Log file: E:/lab5_pipeline/final_fib/pipeline_cpu.runs/synth_1/pipeline.vds
+# Journal file: E:/lab5_pipeline/final_fib/pipeline_cpu.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source pipeline.tcl -notrace
+Command: synth_design -top pipeline -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13988 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 700.031 ; gain = 176.812
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pipeline' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v:2]
+INFO: [Synth 8-6157] synthesizing module 'pdu' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v:1]
+INFO: [Synth 8-226] default block is never used [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v:256]
+WARNING: [Synth 8-3936] Found unconnected internal register 'in_2r_reg' and it is trimmed from '5' to '2' bits. [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'pdu' (1#1) [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cpu' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:2]
+INFO: [Synth 8-638] synthesizing module 'single_text_mem' [e:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/synth/single_text_mem.vhd:66]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 256 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: single_text_mem.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_13' declared at 'e:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_13' [e:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/synth/single_text_mem.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'single_text_mem' (5#1) [e:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_text_mem/synth/single_text_mem.vhd:66]
+INFO: [Synth 8-6157] synthesizing module 'cu' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'cu' (6#1) [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Imm' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Imm' (7#1) [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v:2]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (8#1) [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:2]
+WARNING: [Synth 8-6104] Input port 'clk_cpu' has an internal driver [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:54]
+WARNING: [Synth 8-6104] Input port 'm_rf_addr' has an internal driver [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:54]
+INFO: [Synth 8-6157] synthesizing module 'alucontrol' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'alucontrol' (9#1) [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alu' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (10#1) [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v:2]
+WARNING: [Synth 8-7023] instance 'aluex' of module 'alu' has 8 connections declared, but only 7 given [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:65]
+INFO: [Synth 8-638] synthesizing module 'single_data_mem' [e:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/synth/single_data_mem.vhd:71]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 256 - type: integer 
+	Parameter C_HAS_CLK bound to: 1 - type: integer 
+	Parameter C_HAS_D bound to: 1 - type: integer 
+	Parameter C_HAS_DPO bound to: 1 - type: integer 
+	Parameter C_HAS_DPRA bound to: 1 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 1 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: single_data_mem.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_13' declared at 'e:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_13' [e:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/synth/single_data_mem.vhd:137]
+INFO: [Synth 8-256] done synthesizing module 'single_data_mem' (12#1) [e:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/ip/single_data_mem/synth/single_data_mem.vhd:71]
+INFO: [Synth 8-6157] synthesizing module 'if_id' [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/sources_1/new/if_id.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'if_id' (13#1) [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/sources_1/new/if_id.v:3]
+INFO: [Synth 8-6157] synthesizing module 'id_ex' [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/sources_1/new/id_ex.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex' (14#1) [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/sources_1/new/id_ex.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ex_mem' [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/sources_1/new/ex_mem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ex_mem' (15#1) [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/sources_1/new/ex_mem.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'pcm' does not match port width (32) of module 'ex_mem' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:88]
+INFO: [Synth 8-6157] synthesizing module 'mem_wb' [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/sources_1/new/mem_wb.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mem_wb' (16#1) [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/sources_1/new/mem_wb.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'pcw' does not match port width (32) of module 'mem_wb' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:91]
+INFO: [Synth 8-6157] synthesizing module 'forward' [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/sources_1/new/forward.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'forward' (17#1) [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/sources_1/new/forward.v:3]
+INFO: [Synth 8-6157] synthesizing module 'hazard_branch' [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/sources_1/new/hazard.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'hazard_branch' (18#1) [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/sources_1/new/hazard.v:3]
+WARNING: [Synth 8-689] width (2) of port connection 'id_ex_regsrc' does not match port width (1) of module 'hazard_branch' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:97]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (19#1) [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/cpu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'pipeline' (20#1) [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/single.v:2]
+WARNING: [Synth 8-3331] design hazard_branch has unconnected port clk_cpu
+WARNING: [Synth 8-3331] design hazard_branch has unconnected port ir[31]
+WARNING: [Synth 8-3331] design hazard_branch has unconnected port ir[30]
+WARNING: [Synth 8-3331] design hazard_branch has unconnected port ir[29]
+WARNING: [Synth 8-3331] design hazard_branch has unconnected port ir[28]
+WARNING: [Synth 8-3331] design hazard_branch has unconnected port ir[27]
+WARNING: [Synth 8-3331] design hazard_branch has unconnected port ir[26]
+WARNING: [Synth 8-3331] design hazard_branch has unconnected port ir[25]
+WARNING: [Synth 8-3331] design hazard_branch has unconnected port ir[14]
+WARNING: [Synth 8-3331] design hazard_branch has unconnected port ir[13]
+WARNING: [Synth 8-3331] design hazard_branch has unconnected port ir[12]
+WARNING: [Synth 8-3331] design hazard_branch has unconnected port ir[11]
+WARNING: [Synth 8-3331] design hazard_branch has unconnected port ir[10]
+WARNING: [Synth 8-3331] design hazard_branch has unconnected port ir[9]
+WARNING: [Synth 8-3331] design hazard_branch has unconnected port ir[8]
+WARNING: [Synth 8-3331] design hazard_branch has unconnected port ir[7]
+WARNING: [Synth 8-3331] design forward has unconnected port ir[31]
+WARNING: [Synth 8-3331] design forward has unconnected port ir[30]
+WARNING: [Synth 8-3331] design forward has unconnected port ir[29]
+WARNING: [Synth 8-3331] design forward has unconnected port ir[28]
+WARNING: [Synth 8-3331] design forward has unconnected port ir[27]
+WARNING: [Synth 8-3331] design forward has unconnected port ir[26]
+WARNING: [Synth 8-3331] design forward has unconnected port ir[25]
+WARNING: [Synth 8-3331] design forward has unconnected port ir[14]
+WARNING: [Synth 8-3331] design forward has unconnected port ir[13]
+WARNING: [Synth 8-3331] design forward has unconnected port ir[12]
+WARNING: [Synth 8-3331] design forward has unconnected port ir[11]
+WARNING: [Synth 8-3331] design forward has unconnected port ir[10]
+WARNING: [Synth 8-3331] design forward has unconnected port ir[9]
+WARNING: [Synth 8-3331] design forward has unconnected port ir[8]
+WARNING: [Synth 8-3331] design forward has unconnected port ir[7]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port eflush
+WARNING: [Synth 8-3331] design ex_mem has unconnected port io_we[4]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port io_we[3]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port io_we[2]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port io_we[1]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[31]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[30]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[29]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[28]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[27]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[26]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[25]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[24]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[23]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[22]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[21]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[20]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[19]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[18]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[17]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[16]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[15]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[14]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[13]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[12]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[11]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[10]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[9]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[8]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[7]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[6]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[5]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[4]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[3]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[2]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[1]
+WARNING: [Synth 8-3331] design id_ex has unconnected port ir[0]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[31]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[30]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[29]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[28]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[27]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[26]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[25]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[24]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[23]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[22]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[21]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[20]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[19]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[18]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[17]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[16]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[15]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[14]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[13]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[12]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[11]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[10]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[9]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[8]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[7]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[6]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[5]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[4]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[3]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[2]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[1]
+WARNING: [Synth 8-3331] design dpram has unconnected port qspo[0]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 879.488 ; gain = 356.270
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 879.488 ; gain = 356.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 879.488 ; gain = 356.270
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/constrs_1/new/pipeline.xdc]
+Finished Parsing XDC File [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/constrs_1/new/pipeline.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/constrs_1/new/pipeline.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pipeline_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pipeline_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/lab5_pipeline/final_fib/pipeline_cpu.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/lab5_pipeline/final_fib/pipeline_cpu.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 963.477 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 963.477 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 963.477 ; gain = 440.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 963.477 ; gain = 440.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for cpuex/dm. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cpuex/im. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 963.477 ; gain = 440.258
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/pdu.v:129]
+INFO: [Synth 8-5546] ROM "jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "Regwrite" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-327] inferring latch for variable 'imm_reg' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/Imm.v:9]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[31]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[30]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[29]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[28]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[27]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[26]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[25]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[24]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[23]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[22]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[21]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[20]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[19]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[18]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[17]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[16]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[15]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[14]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[13]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[12]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[11]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[10]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[9]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[8]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[7]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[6]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[5]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[4]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[3]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[2]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[1]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'REG_FILE_reg[0]' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/regfile.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'alucontrol_reg' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alucontrol.v:9]
+WARNING: [Synth 8-327] inferring latch for variable 'aluresult_reg' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'zero_reg' [E:/计组/实验文件/lab4/single_cpu/single_cpu.srcs/sources_1/new/alu.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'fstall_reg' [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/sources_1/new/hazard.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'dflush_reg' [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/sources_1/new/hazard.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'eflush_reg' [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/sources_1/new/hazard.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 963.477 ; gain = 440.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 18    
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 8     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 4     
+	  10 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 47    
+	   4 Input      1 Bit        Muxes := 3     
+	  10 Input      1 Bit        Muxes := 5     
+	   8 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pdu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 3     
+Module cu 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      2 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 5     
+Module Imm 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module alucontrol 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+Module dpram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module if_id 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module id_ex 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+Module ex_mem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module mem_wb 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module forward 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+Module hazard_branch 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module cpu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3936] Found unconnected internal register 'mem_wb1/pcw_reg' and it is trimmed from '32' to '1' bits. [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/sources_1/new/mem_wb.v:12]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ex_mem1/pcm_reg' and it is trimmed from '32' to '1' bits. [E:/lab5_pipeline/final_fib/pipeline_cpu.srcs/sources_1/new/ex_mem.v:13]
+INFO: [Synth 8-5546] ROM "cuex/jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cuex/Branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cuex/MemWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "cuex/Regwrite" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpuex/\alucontrolex/alucontrol_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpuex/\alucontrolex/alucontrol_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpuex/\alucontrolex/alucontrol_reg[1] )
+INFO: [Synth 8-3886] merging instance 'cpuex/id_ex1/ctrl_reg[28]' (FDR) to 'cpuex/id_ex1/ctrl_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/ex_mem1/ctrlm_reg[28]' (FD) to 'cpuex/ex_mem1/ctrlm_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/mem_wb1/ctrlw_reg[28]' (FD) to 'cpuex/mem_wb1/ctrlw_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/id_ex1/ctrl_reg[13]' (FDR) to 'cpuex/id_ex1/ctrl_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/ex_mem1/ctrlm_reg[13]' (FD) to 'cpuex/ex_mem1/ctrlm_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/mem_wb1/ctrlw_reg[13]' (FD) to 'cpuex/mem_wb1/ctrlw_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/id_ex1/ctrl_reg[5]' (FDR) to 'cpuex/id_ex1/ctrl_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/ex_mem1/ctrlm_reg[5]' (FD) to 'cpuex/ex_mem1/ctrlm_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/mem_wb1/ctrlw_reg[5]' (FD) to 'cpuex/mem_wb1/ctrlw_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/id_ex1/ctrl_reg[30]' (FDR) to 'cpuex/id_ex1/ctrl_reg[31]'
+INFO: [Synth 8-3886] merging instance 'cpuex/ex_mem1/ctrlm_reg[30]' (FD) to 'cpuex/ex_mem1/ctrlm_reg[31]'
+INFO: [Synth 8-3886] merging instance 'cpuex/mem_wb1/ctrlw_reg[30]' (FD) to 'cpuex/mem_wb1/ctrlw_reg[31]'
+INFO: [Synth 8-3886] merging instance 'cpuex/id_ex1/ctrl_reg[26]' (FDR) to 'cpuex/id_ex1/ctrl_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/ex_mem1/ctrlm_reg[26]' (FD) to 'cpuex/ex_mem1/ctrlm_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/mem_wb1/ctrlw_reg[26]' (FD) to 'cpuex/mem_wb1/ctrlw_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/id_ex1/ctrl_reg[22]' (FDR) to 'cpuex/id_ex1/ctrl_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/ex_mem1/ctrlm_reg[22]' (FD) to 'cpuex/ex_mem1/ctrlm_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/mem_wb1/ctrlw_reg[22]' (FD) to 'cpuex/mem_wb1/ctrlw_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/id_ex1/ctrl_reg[14]' (FDR) to 'cpuex/id_ex1/ctrl_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/ex_mem1/ctrlm_reg[14]' (FD) to 'cpuex/ex_mem1/ctrlm_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/mem_wb1/ctrlw_reg[14]' (FD) to 'cpuex/mem_wb1/ctrlw_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/id_ex1/ctrl_reg[10]' (FDR) to 'cpuex/id_ex1/ctrl_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/ex_mem1/ctrlm_reg[10]' (FD) to 'cpuex/ex_mem1/ctrlm_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/mem_wb1/ctrlw_reg[10]' (FD) to 'cpuex/mem_wb1/ctrlw_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/id_ex1/ctrl_reg[6]' (FDR) to 'cpuex/id_ex1/ctrl_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/ex_mem1/ctrlm_reg[6]' (FD) to 'cpuex/ex_mem1/ctrlm_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/mem_wb1/ctrlw_reg[6]' (FD) to 'cpuex/mem_wb1/ctrlw_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpuex/id_ex1/ctrl_reg[2]' (FDR) to 'cpuex/id_ex1/ctrl_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/ex_mem1/ctrlm_reg[2]' (FD) to 'cpuex/ex_mem1/ctrlm_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/mem_wb1/ctrlw_reg[2]' (FD) to 'cpuex/mem_wb1/ctrlw_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/id_ex1/ctrl_reg[27]' (FDR) to 'cpuex/id_ex1/ctrl_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/ex_mem1/ctrlm_reg[27]' (FD) to 'cpuex/ex_mem1/ctrlm_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/mem_wb1/ctrlw_reg[27]' (FD) to 'cpuex/mem_wb1/ctrlw_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/id_ex1/ctrl_reg[23]' (FDR) to 'cpuex/id_ex1/ctrl_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/ex_mem1/ctrlm_reg[23]' (FD) to 'cpuex/ex_mem1/ctrlm_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/mem_wb1/ctrlw_reg[23]' (FD) to 'cpuex/mem_wb1/ctrlw_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/id_ex1/ctrl_reg[19]' (FDR) to 'cpuex/id_ex1/ctrl_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/ex_mem1/ctrlm_reg[19]' (FD) to 'cpuex/ex_mem1/ctrlm_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/mem_wb1/ctrlw_reg[19]' (FD) to 'cpuex/mem_wb1/ctrlw_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/id_ex1/ctrl_reg[15]' (FDR) to 'cpuex/id_ex1/ctrl_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/ex_mem1/ctrlm_reg[15]' (FD) to 'cpuex/ex_mem1/ctrlm_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/mem_wb1/ctrlw_reg[15]' (FD) to 'cpuex/mem_wb1/ctrlw_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/id_ex1/ctrl_reg[11]' (FDR) to 'cpuex/id_ex1/ctrl_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/ex_mem1/ctrlm_reg[11]' (FD) to 'cpuex/ex_mem1/ctrlm_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/mem_wb1/ctrlw_reg[11]' (FD) to 'cpuex/mem_wb1/ctrlw_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/id_ex1/ctrl_reg[7]' (FDR) to 'cpuex/id_ex1/ctrl_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/ex_mem1/ctrlm_reg[7]' (FD) to 'cpuex/ex_mem1/ctrlm_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpuex/mem_wb1/ctrlw_reg[7]' (FD) to 'cpuex/mem_wb1/ctrlw_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpuex/\id_ex1/ctrl_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpuex/\ex_mem1/ctrlm_reg[3] )
+INFO: [Synth 8-3886] merging instance 'cpuex/mem_wb1/ctrlw_reg[3]' (FD) to 'cpuex/ex_mem1/ctrlm_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpuex/\ex_mem1/ctrlm_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (alucontrolex/alucontrol_reg[3]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (alucontrolex/alucontrol_reg[2]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (alucontrolex/alucontrol_reg[1]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (alucontrolex/alucontrol_reg[0]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[30]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[29]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[28]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[27]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[26]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[25]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[24]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[23]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[22]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[21]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[20]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[19]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[18]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[17]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[16]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[15]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[14]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[13]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[12]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[11]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[10]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[9]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[8]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[7]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[6]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[5]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[4]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[3]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[2]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[1]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (aluex/aluresult_reg[0]) is unused and will be removed from module cpu.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 963.477 ; gain = 440.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------------+-------------------------------------------------------+---------------+----------------+
+|Module Name          | RTL Object                                            | Depth x Width | Implemented As | 
++---------------------+-------------------------------------------------------+---------------+----------------+
+|rom                  | rom[255]                                              | 256x20        | LUT            | 
+|dist_mem_gen_v8_0_13 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[255] | 256x20        | LUT            | 
++---------------------+-------------------------------------------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                                                | Inference | Size (Depth x Width) | Primitives       | 
++------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+|cpuex/dm/U0 | synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg | Implied   | 256 x 32             | RAM128X1D x 64   | 
++------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 963.477 ; gain = 440.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+      : pduex/i_0/io_addr[0]
+      : pduex/io_addr[0]
+      : cpuex/io_addr[0]
+      : cpuex/i_4/O62[0]
+      : cpuex/i_4/io_din[0]
+      : cpuex/io_din[0]
+      : pduex/io_din[0]
+      : pduex/i_0/io_din[0]
+      : cpuex/i_4/io_din[0]
+      : cpuex/io_din[0]
+      : pduex/io_din[0]
+      : pduex/i_0/io_din[0]
+      : cpuex/i_4/io_din[1]
+      : cpuex/io_din[1]
+      : pduex/io_din[1]
+      : pduex/i_0/io_din[1]
+      : cpuex/i_4/io_din[0]
+      : cpuex/io_din[0]
+      : pduex/io_din[0]
+      : pduex/i_0/io_din[0]
+      : cpuex/i_4/io_din[1]
+      : cpuex/io_din[1]
+      : pduex/io_din[1]
+      : pduex/i_0/io_din[1]
+      : cpuex/i_4/io_din[0]
+      : cpuex/io_din[0]
+      : pduex/io_din[0]
+      : pduex/i_0/io_din[0]
+      : cpuex/i_4/io_din[1]
+      : cpuex/io_din[1]
+      : pduex/io_din[1]
+      : pduex/i_0/io_din[1]
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through cpuex/i_4/i_64/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through cpuex/i_4/i_64/Z'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'pduex/i_0/i_14' with timing assertions on output pin 'O'
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 963.477 ; gain = 440.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                                                | Inference | Size (Depth x Width) | Primitives       | 
++------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+|cpuex/dm/U0 | synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg | Implied   | 256 x 32             | RAM128X1D x 64   | 
++------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-139] cannot merge instances \cpuex/aluex/aluresult0_inferred__0/i___4  and i_1486 because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances \cpuex/aluex/aluresult0_inferred__0/i___1  and i_1485 because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances i_1485 and \cpuex/aluex/aluresult0_inferred__0/i___1  because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances i_1486 and \cpuex/aluex/aluresult0_inferred__0/i___4  because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances \cpuex/aluex/aluresult0_inferred__0/i___4  and i_1486 because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances \cpuex/aluex/aluresult0_inferred__0/i___1  and i_1485 because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances i_1485 and \cpuex/aluex/aluresult0_inferred__0/i___1  because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances i_1486 and \cpuex/aluex/aluresult0_inferred__0/i___4  because of non-equivalent assertions
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_435/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_435/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2090/O'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 963.477 ; gain = 440.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 963.820 ; gain = 440.602
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 963.820 ; gain = 440.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \out0_r[4]_i_6 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \out0_r[2]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \out0_r[3]_i_2 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through aluresult0_carry_i_3/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \out0_r[1]_i_1 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[31][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[30][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[29][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[28][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[27][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[26][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[25][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[24][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[23][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[22][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[21][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[20][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[19][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[18][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[17][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[16][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[15][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[14][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[13][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[12][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[11][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[10][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[9][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[8][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[7][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[6][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[5][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[4][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[3][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[2][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[1][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[0][1] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \out0_r[0]_i_1 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through aluresult0_carry_i_4/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[31][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[30][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[29][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[28][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[27][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[26][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[25][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[24][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[23][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[22][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[21][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[20][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[19][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[18][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[17][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[16][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[15][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[14][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[13][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[12][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[11][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[10][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[9][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[8][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[7][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[6][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[5][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[4][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[3][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[2][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[1][0] /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \cpuex/regfile1/REG_FILE_reg[0][0] /D'
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 963.820 ; gain = 440.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 963.820 ; gain = 440.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 963.820 ; gain = 440.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 963.820 ; gain = 440.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |    12|
+|2     |CARRY4    |    48|
+|3     |LUT1      |    36|
+|4     |LUT2      |    54|
+|5     |LUT3      |   157|
+|6     |LUT4      |    77|
+|7     |LUT5      |   337|
+|8     |LUT6      |  1081|
+|9     |MUXF7     |   470|
+|10    |MUXF8     |    83|
+|11    |RAM128X1D |    64|
+|12    |FDCE      |    87|
+|13    |FDPE      |    21|
+|14    |FDRE      |   466|
+|15    |FDSE      |     6|
+|16    |LD        |  1056|
+|17    |LDC       |     2|
+|18    |LDCP      |     1|
+|19    |LDP       |     1|
+|20    |IBUF      |    10|
+|21    |OBUF      |    15|
++------+----------+------+
+
+Report Instance Areas: 
++------+--------------------------------------+-------------------------------------------+------+
+|      |Instance                              |Module                                     |Cells |
++------+--------------------------------------+-------------------------------------------+------+
+|1     |top                                   |                                           |  4084|
+|2     |  cpuex                               |cpu                                        |  3834|
+|3     |    im                                |single_text_mem                            |    38|
+|4     |      U0                              |dist_mem_gen_v8_0_13                       |    38|
+|5     |        \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_13_synth                 |    38|
+|6     |          \gen_rom.rom_inst           |rom                                        |    38|
+|7     |    dm                                |single_data_mem                            |   194|
+|8     |      U0                              |dist_mem_gen_v8_0_13__parameterized1       |   194|
+|9     |        \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_13_synth__parameterized0 |   194|
+|10    |          \gen_dp_ram.dpram_inst      |dpram                                      |   194|
+|11    |    Immex                             |Imm                                        |    32|
+|12    |    aluex                             |alu                                        |    65|
+|13    |    ex_mem1                           |ex_mem                                     |   159|
+|14    |    forward1                          |forward                                    |   166|
+|15    |    hazard_branch1                    |hazard_branch                              |     6|
+|16    |    id_ex1                            |id_ex                                      |   380|
+|17    |    if_id1                            |if_id                                      |   218|
+|18    |    mem_wb1                           |mem_wb                                     |   231|
+|19    |    regfile1                          |regfile                                    |  2304|
+|20    |  pduex                               |pdu                                        |   213|
++------+--------------------------------------+-------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 963.820 ; gain = 440.602
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 373 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:54 . Memory (MB): peak = 963.820 ; gain = 356.613
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 963.820 ; gain = 440.602
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1725 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 979.863 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1124 instances were transformed.
+  LD => LDCE: 1056 instances
+  LDC => LDCE: 2 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 1 instances
+  LDP => LDPE: 1 instances
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 64 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+123 Infos, 260 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 979.863 ; gain = 689.160
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 979.863 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/lab5_pipeline/final_fib/pipeline_cpu.runs/synth_1/pipeline.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file pipeline_utilization_synth.rpt -pb pipeline_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 11 18:18:03 2022...

@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 11 18:15:29 2022
+# Process ID: 12552
+# Current directory: E:/lab5_pipeline/final_fib
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3120 E:\lab5_pipeline\final_fib\pipeline_cpu.xpr
+# Log file: E:/lab5_pipeline/final_fib/vivado.log
+# Journal file: E:/lab5_pipeline/final_fib\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/lab5_pipeline/final_fib/pipeline_cpu.xpr
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.coefficient_file {E:/lab5_pipeline/test.coe/fib_text.coe}] [get_ips single_text_mem]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1

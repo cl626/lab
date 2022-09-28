@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\myOS",
+    "\\myOS\\lib",
+    "\\myOS\\printk"
+  ],
+  "SelectedNode": "\\myOS\\osStart.c",
+  "PreviewInSolutionExplorer": false
+}

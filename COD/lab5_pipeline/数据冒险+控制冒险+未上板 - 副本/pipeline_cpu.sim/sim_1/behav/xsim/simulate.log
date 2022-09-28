@@ -1,0 +1,7 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file single_data_mem.mif
+WARNING in pipeline_sim.pipeline1.cpuex.dm.inst at time                35000 ns: 
+Reading from out-of-range address. Max address in pipeline_sim.pipeline1.cpuex.dm.inst is         255
