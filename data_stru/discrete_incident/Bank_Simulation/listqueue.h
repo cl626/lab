@@ -138,7 +138,7 @@ QNode* mkQNode(int Arrivtime, QNode* next, int smax, int lmin) {
 	mk->Arrivtime = Arrivtime;
 	mk->next = next;
 //	srand((unsigned)time(NULL));
-	mk->bill = rand() % (smax - lmin) - (smax + lmin) / 2;
+	mk->bill = rand() % (smax - lmin) +lmin;
 //	srand((unsigned)time(NULL));
 	mk->Duration = rand() % 10+1;
 	return mk;

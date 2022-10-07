@@ -76,7 +76,7 @@ void CustomerDeparture(EventList* ev, Elemtype* en, Queue* wait1, Queue* wait2, 
 		}
 	}
 	else {//Ntype==3
-		printf("A customer convert to queue2 at %d", en->OccurTime);	//debug
+		printf("A customer convert to queue2 at %d\n", en->OccurTime);	//debug
 		QNode* qnew = GetHead(wait1);	
 		DelQueue(wait1);
 		EnQueue(wait2, qnew);
@@ -97,7 +97,7 @@ void CustomerDeparture(EventList* ev, Elemtype* en, Queue* wait1, Queue* wait2, 
 int main(){
 	printf("input total:");
 	scanf_s("%d", &total);
-	printf("total:%d\n", total);
+//	printf("total:%d\n", total);
 	printf("input closetime:");
 	scanf_s("%d", &closetime);
 	printf("input max_save and max_lend:");
@@ -111,6 +111,17 @@ int main(){
 		else	CustomerDeparture(ev, EGetHead(ev), wait1, wait2, Totaltime);
 		DelList(ev);
 	}
+/*	printf("wait1 长度=%d\n", QueueLength(wait1));
+	printf("wait2 长度=%d\n", QueueLength(wait2));
+	for (int i = 0; i < QueueLength(wait1); i++) {
+		Totaltime += closetime - GetHead(wait1)->Arrivtime;
+		DelQueue(wait1);
+	}
+	for (int i = 0; i < QueueLength(wait2); i++) {
+		Totaltime += closetime - GetHead(wait2)->Arrivtime;
+		DelQueue(wait2);
+	}
+	*/
 	printf("结束金额：%d\n", total);
 	printf("人数：%d\n", customer_number);
 	printf("人均用时:%d\n", Totaltime/customer_number);
