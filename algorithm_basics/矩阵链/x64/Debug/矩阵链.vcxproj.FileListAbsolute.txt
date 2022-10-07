@@ -1,0 +1,2 @@
+E:\课程实验\algorithm_basics\hoffman_tree\矩阵链\x64\Debug\矩阵链.exe
+E:\课程实验\algorithm_basics\矩阵链\x64\Debug\矩阵链.exe
